@@ -1,0 +1,107 @@
+:root {
+  color-scheme: dark;
+  --background: #07090d;
+  --surface: #11151c;
+  --border: #273142;
+  --text: #f3f6fb;
+  --secondary: #aab4c4;
+  --accent: #0a84ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(10, 132, 255, 0.15), transparent 34rem),
+    var(--background);
+  color: var(--text);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 64px 0 80px;
+}
+
+header { margin-bottom: 44px; }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+.mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: linear-gradient(145deg, #263041, #090b0f);
+  box-shadow: 0 0 24px rgba(10, 132, 255, 0.28);
+}
+
+h1 {
+  margin: 48px 0 12px;
+  font-size: clamp(2.25rem, 8vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  margin: 36px 0 10px;
+  font-size: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+p, li { color: var(--secondary); }
+
+.lede {
+  max-width: 620px;
+  font-size: 1.15rem;
+}
+
+.card {
+  margin: 28px 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
+}
+
+a { color: #65adff; }
+a:hover { color: #9bcbff; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+nav a { text-decoration: none; }
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: #778296;
+  font-size: 0.9rem;
+}
